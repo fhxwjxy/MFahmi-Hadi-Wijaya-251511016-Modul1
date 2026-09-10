@@ -3,10 +3,11 @@
 <head> 
     <meta charset="utf-8"> 
     <title>Portal Kegiatan D3 Teknik Informatika</title> 
+    <link rel="stylesheet" href="css/style.css">
 </head> 
 <body> 
     <header><h1>Mahasiswa D3 Informatika Gelar Lokakarya Web Dasar </h1></header> 
-    <p><time datetime="2026-09-12T09:00">12 September 2026, pukul 09.00 WIB</time><br>
+    <p class="waktu-tempat"><time datetime="2026-09-12T09:00">12 September 2026, pukul 09.00 WIB</time><br>
         Lokasi: Laboratorium Komputer 2
     </p>
     <nav> 
@@ -15,7 +16,6 @@
             <a href="#Rangkaian-Kegiatan">Rangkaian Kegiatan</a> 
     </nav> 
     <main>
-        <article>
         <figure>
             <img src="assets/lokakarya-web.jpg" 
             alt="   ">
@@ -33,13 +33,38 @@
             <h3>Rangkaian Kegiatan</h3>
             <p>Peserta menyusun halaman profil, memperbaiki kesalahan HTML, menerapkan CSS, dan mempresentasikan hasil melalui code defense singkat</p>
         </section>
+        <section class="pricing" aria-labelledby="pricing-title"> 
+            <div class="container"> 
+                <h2 id="pricing-title">Pilihan Paket Lokakarya</h2> 
+                <div class="pricing-list"> 
+                    <article class="price-card"> 
+                        <h3>Mandiri</h3> 
+                        <p class="price">Gratis</p> 
+                        <ul><li>Materi dasar</li><li>Latihan mandiri</li></ul> 
+                        <a class="button" href="#daftar">Pilih paket</a> 
+                    </article> 
+                    <article class="price-card price-card--featured"> 
+                        <p class="badge">Rekomendasi</p> 
+                        <h3>Terbimbing</h3> 
+                        <p class="price">Rp150.000</p> 
+                        <ul><li>Materi dasar</li><li>Review tugas</li><li>Code defense</li></ul> 
+                        <a class="button" href="#daftar">Pilih paket</a> 
+                    </article>
+                        <article class="price-card"> 
+                        <h3>Intensif</h3> 
+                        <p class="price">Rp250.000</p> 
+                        <ul><li>Semua fasilitas</li><li>Konsultasi tambahan</li></ul> 
+                        <a class="button" href="#daftar">Pilih paket</a> 
+                    </article> 
+                </div> 
+            </div> 
+        </section> 
         <blockquote>
             <p>"Kesalahan saat praktik menjadi bahan untuk memahami cara kerja browser, bukan sekadar sesuatu yang harus dihindari."</p>
         </blockquote>
-        <p><a href="#Rangkaian-Kegiatan">Kembali ke daftar kegiatan</a></p>
-        </article>
+        <p><a class="kembali" href="#Rangkaian-Kegiatan">Kembali ke daftar kegiatan</a></p>
     </main> 
-    <footer>Portal Kegiatan D3 Teknik Informati ka</footer> 
+    <footer>Portal Kegiatan D3 Teknik Informatika</footer> 
 </body> 
 </html> 
 
