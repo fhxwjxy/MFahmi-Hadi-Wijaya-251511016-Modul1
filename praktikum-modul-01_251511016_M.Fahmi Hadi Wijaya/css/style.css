@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --warna-utama: #2563eb;
+    --warna-latar: #f5f7fb;
+    --warna-teks: #1f2937;
+    --spasi-dasar: 16px;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: var(--warna-latar);
+    color: var(--warna-teks);
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--spasi-dasar);
+    padding-right: var(--spasi-dasar);
+}
+
+header {
+    padding: var(--spasi-dasar) 0;
+}
+
+h1 {
+    font-size: 28px;
+    color: var(--warna-utama);
+}
+
+h2,
+h3,
+h4 {
+    font-size: 20px;
+    color: var(--warna-teks);
+    margin-bottom: calc(var(--spasi-dasar) / 2);
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spasi-dasar);
+    padding: calc(var(--spasi-dasar) / 2) 0;
+    margin-bottom: var(--spasi-dasar);
+}
+
+.nav-link {
+    color: var(--warna-utama);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.nav-link:hover {
+    background-color: var(--warna-utama);
+    color: #ffffff;
+}
+
+.nav-link:focus-visible {
+    outline: 3px solid var(--warna-utama);
+    outline-offset: 2px;
+}
+
+.card-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spasi-dasar);
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: var(--spasi-dasar);
+    margin-bottom: var(--spasi-dasar);
+}
+
+@media (min-width: 768px) {
+    .card-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex: 1 1 200px;
+        margin-bottom: 0;
+    }
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: calc(var(--spasi-dasar) / 2);
+    display: block;
+}
+
+.card p {
+    display: inline-block;
+    margin-right: calc(var(--spasi-dasar) / 2);
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--warna-utama);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 6px;
+}
+
+.button:hover {
+    background-color: #1d4ed8;
+}
+
+.button:focus-visible {
+    outline: 3px solid var(--warna-teks);
+    outline-offset: 3px;
+}
+
+footer {
+    text-align: center;
+    padding: var(--spasi-dasar) 0;
+    color: var(--warna-teks);
+    font-size: 14px;
+}
